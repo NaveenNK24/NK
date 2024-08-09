@@ -7,7 +7,7 @@ const initialState = {
     error:''
 }
 
-const BASE_URL = 'http://localhost:4000/api/tasks'
+const BASE_URL = process.env.BASE_URL
 
 //GET
 export const getTasksFromServer = createAsyncThunk(
