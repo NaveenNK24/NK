@@ -7,7 +7,7 @@ const initialState = {
     error:''
 }
 
-const BASE_URL = 'mongodb+srv://naveensaven:2658@clusterprojectnk.xjfed.mongodb.net/task_test?retryWrites=true&w=majority&appName=ClusterProjectNK'
+const BASE_URL = 'http://localhost:4000/api/tasks'
 
 //GET
 export const getTasksFromServer = createAsyncThunk(
