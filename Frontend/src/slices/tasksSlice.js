@@ -1,5 +1,5 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
-
+// require("dotenv").config();
 const initialState = {
     tasksList:[],
     selectedTask:{},
@@ -7,7 +7,11 @@ const initialState = {
     error:''
 }
 
-const BASE_URL = process.env.BASE_URL1
+// const BASE_URL = "http://localhost:4000/api/tasks"
+const BASE_URL = "https://task-be-eta.vercel.app/"
+// console.log(process.env.REACT_APP_BASE_URL)
+// const BASE_URL = await fetch(`${process.env.REACT_APP_BASE_URL}/api/tasks`)
+console.log(BASE_URL);
 
 //GET
 export const getTasksFromServer = createAsyncThunk(
