@@ -8,7 +8,8 @@ const initialState = {
 }
 
 // const BASE_URL = "http://localhost:4000/api/tasks"
-const BASE_URL = "https://task-be-eta.vercel.app/"
+const BASE_URL = "http://localhost:5000/auth/callback"
+// const BASE_URL = "https://task-be-eta.vercel.app/"
 // console.log(process.env.REACT_APP_BASE_URL)
 // const BASE_URL = await fetch(`${process.env.REACT_APP_BASE_URL}/api/tasks`)
 console.log(BASE_URL);
